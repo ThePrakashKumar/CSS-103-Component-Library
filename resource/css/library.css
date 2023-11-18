@@ -31,7 +31,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--main-text-color);
-  box-sizing: border-box;
 }
 
 /* COLORS */
@@ -62,14 +61,15 @@ body {
   color: #ffffff;
   font-weight: 500;
   padding: 1.3rem 4rem;
-  border: none;
+  border: 2px solid var(--text-color);
 }
 
 .btn:hover {
   color: var(--text-color);
   background: var(--background);
   cursor: pointer;
-  transition: all 0.4s;
+  border: 2px solid var(--text-color);
+  transition: all 0.3s;
 }
 
 /* Button Helper */
@@ -180,6 +180,29 @@ body {
 
 /* Form */
 
+.input-text {
+  color: var(--main-text-color);
+  font-size: 1.8rem;
+  padding: 1.3rem;
+  border: none;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 8px;
+  display: block;
+  background: var(--background);
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.input-text-wrapper input:focus {
+  outline: none;
+}
+
+.btn--submit {
+  width: 100%;
+  max-width: 40rem;
+}
+
 /* Navigation */
 .nav {
   display: flex;
@@ -283,6 +306,7 @@ body {
   align-items: center;
   justify-content: center;
   width: fit-content;
+  border-radius: 8px;
 }
 
 .alert__text {
