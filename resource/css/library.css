@@ -117,6 +117,7 @@ body {
 .btn--disabled {
   pointer-events: none;
   background-color: #b6b9ba;
+  border: 2px solid #b6b9ba;
 }
 
 .btn--link:hover {
