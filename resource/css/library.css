@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined|Material+Icons+Two+Tone");
 
-/* BASIC RESET & BODY STYLES */
+/* Basic Reset and Body Styles */
 *,
 *::after,
 *::before {
@@ -177,10 +178,6 @@ body {
   font-weight: 500;
 }
 
-.card-blog__description {
-  padding-bottom: 0.3rem;
-}
-
 /* Form */
 
 /* Navigation */
@@ -279,6 +276,86 @@ body {
 }
 
 /* Alert/Notification */
+
+.alert {
+  display: flex;
+  padding: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.alert__text {
+  font-size: 1.7rem;
+  margin: auto 1rem;
+  font-weight: 500;
+}
+
+.material-icons-round {
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.alert__icon__close {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* Alert Success Div */
+.alert--success {
+  background: var(--success-light);
+  border: 1.8px solid var(--success-dark);
+}
+
+.alert--success--icon {
+  color: var(--success-dark);
+}
+
+.alert--success--icon--close:hover {
+  background-color: var(--success-dark);
+}
+
+/* Alert Warning Div */
+.alert--warning {
+  background: var(--warning-light);
+  border: 1.8px solid var(--warning-dark);
+}
+
+.alert--warning--icon {
+  color: var(--warning-dark);
+}
+
+.alert--warning--icon--close:hover {
+  background-color: var(--warning-dark);
+}
+
+/* Alert Error Div */
+.alert--error {
+  background: var(--error-light);
+  border: 1.8px solid var(--error-dark);
+}
+
+.alert--error--icon {
+  color: var(--error-dark);
+}
+
+.alert--error--icon--close:hover {
+  background-color: var(--error-dark);
+}
+
+/* Alert Info Div */
+.alert--info {
+  background: var(--info-light);
+  border: 1.8px solid var(--info-dark);
+}
+
+.alert--info--icon {
+  color: var(--info-dark);
+}
+
+.alert--info--icon--close:hover {
+  background-color: var(--info-dark);
+}
 
 /* Typography */
 
