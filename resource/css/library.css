@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* BASIC RESET & BODY STYLES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  box-sizing: border-box;
+}
+
+/* COLORS */
+
+:root {
+  /* Blue Gray */
+  --background: #f8fafc;
+  --text-color: #0f172a;
+  --text-light-color: #94a3b8;
+  /* 400 */
+  --success-dark: #34d399;
+  --success-light: #ecfdf5;
+  --warning-dark: #fb923c;
+  --warning-light: #fff7ed;
+  --error-dark: #f87171;
+  --error-light: #fef2f2;
+  --info-dark: #60a5fa;
+  --info-light: #eff6ff;
+  --input-outline: #d1d5db;
+}
+
+/* BUTTON */
+
+.btn {
+  font-size: 1.7rem;
+  border-radius: 8px;
+  background: var(--text-color);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1.3rem 4rem;
+  border: none;
+}
+
+.btn:hover {
+  color: var(--text-color);
+  background: var(--background);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+/* Button Helper */
+.btn--sm {
+  font-size: 1.5rem;
+  padding: 0.8rem 2.3rem;
+}
+
+.btn--md {
+  font-size: 1.6rem;
+  padding: 1rem 2.8rem;
+}
+
+.btn--lg {
+  font-size: 1.8rem;
+  padding: 1.2rem 4rem;
+}
+
+/* Link Button */
+.btn--link {
+  border: none;
+  padding: 0.1rem;
+  border-bottom: 2px solid var(--text-color);
+  box-shadow: none;
+  background: #fff;
+  color: var(--text-color);
+  border-radius: 0;
+}
+
+/* Button Outlined */
+.btn--outlined {
+  background: #ffffff;
+  color: var(--background-color);
+  border: 2px solid var(--text-color);
+  justify-content: space-between;
+}
+
+.btn--outlined:hover {
+  color: #ffffff;
+  background-color: var(--text-color);
+  border: 2px solid var(--text-color);
+  transition: all 0.4s;
+}
+
+.btn--disabled {
+  pointer-events: none;
+  background-color: #b6b9ba;
+}
+
+.btn--link:hover {
+  background: var(--text-color);
+  color: var(--background);
+  transition: all 0.4s;
+}
+
+/* Cards */
+
+/* Video Card */
+.card-video {
+  max-width: 35rem;
+  width: 90%;
+  background: var(--background);
+  border-radius: 8px;
+}
+
+.card-video__thumbnail__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-video__thumbnail {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.video-card__text__wrapper {
+  padding: 5px;
+}
+
+.card-video__title {
+  line-height: 1.2;
+}
+
+.card-video__details {
+  color: var(--main-text-light-color);
+}
+
+/* Blog Card  */
+.card-blog {
+  max-width: 35rem;
+  width: 90%;
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.card-blog__image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-blog__title {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.card-blog__description {
+  padding-bottom: 0.3rem;
+}
